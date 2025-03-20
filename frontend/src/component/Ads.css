@@ -1,0 +1,60 @@
+.Ads {
+  width: 100%;
+  padding: 30px;
+}
+
+.carousel-item img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .Ads {
+    padding: 20px;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .Ads {
+    padding: 15px;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .Ads {
+    padding: 10px;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Ads {
+    padding: 5px;
+  }
+
+  .carousel-item img {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+}

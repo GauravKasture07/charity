@@ -1,0 +1,40 @@
+version: '3.8'  # You can keep this if you're using Docker Compose V2
+
+services:
+  mysql_container:
+    image: mysql:9.2
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"  # Allows empty root password
+      MYSQL_DATABASE: donation_db  # Your database name
+      MYSQL_USER: donation_user  # Your user (optional)
+      MYSQL_PASSWORD: ""  # Optional: leave blank for no password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ./backend  # Path to your backend folder
+    restart: always
+    environment:
+      MYSQL_HOST: mysql_container  # Name of the MySQL container
+      MYSQL_PORT: 3307
+      MYSQL_DATABASE: donation_db
+      MYSQL_USER: donation_user
+      MYSQL_PASSWORD: ""  # Password if you set one
+    ports:
+      - "5000:5000"  # Adjust the port if needed
+    depends_on:
+      - mysql_container  # Waits for MySQL to be ready
+
+  frontend:
+    build:
+      context: ./  # Path to the root folder of your frontend (React app)
+    restart: always
+    ports:
+      - "3000:3000"  # Expose React frontend on port 3000
+
+volumes:
+  mysql_data:

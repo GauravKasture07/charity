@@ -1,0 +1,194 @@
+/* General Styles */
+.About {
+  background-image: url('../Images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fadeInText {
+  font-size: 3em;
+  color: #333;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+.service-area {
+  padding: 60px 0;
+  background-color: #f2f3f7;
+}
+
+.section-tittle {
+  margin-bottom: 60px;
+}
+
+.section-tittle span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-tittle h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.section-tittle h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-us {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.about-us h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-us h3::after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-us ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.single-cat {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.single-cat:hover {
+  transform: translateY(-10px);
+}
+
+.single-cat .cat-icon img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.single-cat .cat-cap h5 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Team Member Slider */
+.Team_Members {
+  max-width: 800px; /* Increased the max-width */
+  margin: 0 auto; /* Center the carousel */
+}
+
+/* Ensure images within carousel items are sized appropriately */
+.Team_Members .carousel-item img {
+  max-height: 500px; /* Increased max-height to control the size of images */
+  object-fit: cover; /* Maintain aspect ratio */
+  width: 100%; /* Ensure image fills the container */
+}
+
+/* Caption styles */
+.Team_Members .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Increased padding for better readability */
+  border-radius: 20px;
+}
+
+.Team_Members .carousel-caption h3 {
+  font-size: 18px; /* Increased font size */
+  color: #fff;
+}
+
+.Team_Members .carousel-caption p {
+  font-size: 14px; /* Increased font size */
+  color: #fff;
+}
+
+.single-cat .cat-cap p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Team_Members {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+  .Team_Members .carousel-caption h3 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .Team_Members .carousel-caption p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .Team_Members .carousel-caption h3 {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
+
+  .Team_Members .carousel-caption p {
+    font-size: 10px; /* Further adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,87 @@
+.Home {
+    background-image: url('../Images/background.jpg');
+    min-height: 100vh;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .slogan {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slogan h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .slogan button {
+    font-size: 26px;
+    padding: 10px 20px;
+  }
+  
+  .slogan p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 50vh;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .slogan h1 {
+      font-size: 58px;
+    }
+    
+    .slogan button {
+      font-size: 14px;
+    }
+    
+    .slogan p {
+      font-size: 18px;
+    }
+    
+    .image-container img {
+      max-height: 40vh;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Home {
+        min-height: 100vh;
+        padding-top: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .slogan {
+        padding: 20px;
+        text-align: left;
+      }
+    .slogan h1 {
+      font-size: 44px;
+    }
+    
+    .slogan p {
+      font-size: 20px;
+    }
+    
+    .image-container img {
+      max-height: 40vh;
+    }
+    .slogan button {
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+  }
+  

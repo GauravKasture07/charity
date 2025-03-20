@@ -1,0 +1,57 @@
+.footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: black; /* black background */
+    color: #fff; /* white text */
+  }
+  
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    grid-gap: 40px; /* reduced grid gap */
+  }
+  
+  .left, .right, .middle {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .location {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+  
+  .location p {
+    line-height: 30px;
+  }
+  
+  .social {
+    margin-top: 1rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+  
+    .left, .middle, .right {
+      padding: 1rem 0.5rem; /* Adjusted padding for responsiveness */
+    }
+  
+    .footer {
+      padding: 3rem 0; /* Reduced padding on smaller screens */
+    }
+  }
+  

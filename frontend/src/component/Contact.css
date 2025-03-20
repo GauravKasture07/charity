@@ -1,0 +1,108 @@
+/* General styles */
+.Contact {
+    background: url("../Images/background.jpg");
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInText {
+    font-size: 3em;
+    color: #333;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.form {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for better readability */
+}
+
+.Contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Contact form div {
+    margin-bottom: 15px;
+}
+
+.Contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.Contact input,
+.Contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .Contact {
+        padding: 10% 3%; /* Adjusted padding */
+        min-height: auto; /* No longer fixed height */
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .Contact h1 {
+        font-size: 2em;
+    }
+
+    .Contact input,
+    .Contact textarea {
+        padding: 8px;
+    }
+
+    .Contact button {
+        padding: 8px;
+    }
+
+    /* Responsive animation */
+    .fadeInText {
+        font-size: 2em; /* Adjust size for smaller screens */
+    }
+}
