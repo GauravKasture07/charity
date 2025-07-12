@@ -6,7 +6,7 @@
 ---
 
 ### 2. 📝 Charity Registration Form
-![Registration Form](https://raw.githubusercontent.com/GauravKasture07/charity/master/Screenshot%202025-04-14%2013533.png)
+![Registration Form](https://raw.githubusercontent.com/GauravKasture07/charity/master/Screenshot%202025-04-14%20134533.png)
 
 ---
 
