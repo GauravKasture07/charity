@@ -1,1 +1,1 @@
-<img src="C:\Users\Admin\Pictures\Screenshots/Screenshot 2025-04-14 134802.png" alt="Screenshot" width="500"/>
+![Charity Screenshot](https://raw.githubusercontent.com/GauravKasture07/charity/master/Screenshot%202025-04-14%20134316.png)
